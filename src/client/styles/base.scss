@@ -1,0 +1,151 @@
+@import "form.scss";
+@import "header.scss";
+@import "footer.scss";
+
+
+body{
+    background: rgb(34,195,112);
+    background: linear-gradient(0deg, rgba(34,195,112,1) 26%, rgba(108,218,255,1) 30%, rgba(237,243,4,1) 39%, rgba(253,187,45,1) 53%, rgba(162,45,253,1) 70%, rgba(2,4,91,1) 97%);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    color: #fffffe;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px 0 #ffffff;
+    transition: 0.3s;
+    font-size: 20px;
+    background: rgb(217,255,0);
+    background: radial-gradient(circle, rgba(217,255,0,1) 8%, rgba(252,163,0,1) 33%, rgba(21,205,208,1) 49%, rgba(0,0,0,1) 80%);
+    color: #ffffff;
+}
+
+.card in {
+    grid-area: in;
+}
+
+.card out {
+    grid-area: out;
+}
+
+/* Initial size for small screens < 600px*/
+#app{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 300px;
+    border: 2px solid #ffffff;
+    grid-template-areas:
+    "hd"
+    "city"
+    "dDate"
+    "rDate"
+    "post"
+    "ft";
+}
+
+
+/* For Screens < 900px*/
+@media(max-width:900px){
+    #app{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "city city city city city city city city"
+        "dDate dDate dDate dDate dDate dDate dDate dDate"
+        "rDate rDate rDate rDate rDate rDate rDate rDate"
+        "post post post post post post post post"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid #ffffff;
+        height: 100vh;
+    }
+
+    #coordinates,
+    #location,
+    #country, 
+    #length, 
+    #daysToTrip,
+    #description,
+    #temp,
+    #photoURL{
+        font-size: 0.8em;
+        margin-top: 5px;
+    }
+
+    #pix, 
+    #pixDefault {
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: fill;
+        border-radius: 15%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Larger Screens */
+@media (min-width: 901px) {
+    #app{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "city city city city city city city city"
+        "dDate dDate dDate dDate" "rDate rDate rDate rDate"
+        "post post post post post post post post"
+        "ft ft ft ft ft ft ft ft";
+        border: 2px solid #ffffff;
+        height: 100vh;
+    }
+
+    .date { 
+        display: flex;
+        height: 75px;
+    }
+
+    #depart, 
+    #return { 
+       display: flex;
+       flex-direction: column;
+       width: 49%;
+       margin: auto;
+       margin-bottom: 10px;
+    }
+
+
+
+    .destination {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #pix,
+    #pixDefault {
+        max-width: 95%;
+        max-height: 95%;
+        object-fit: fill;
+        align-items: center;
+        border-radius: 15%;
+        margin: 0 auto;
+    }
+}
