@@ -1,0 +1,140 @@
+.holder {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.date {
+  margin: 0 auto;
+  width: auto;
+}
+
+#destination {
+  grid-area: city;
+  width: auto;
+  margin: 0 auto;
+}
+
+#depart {
+  grid-area: dDate;
+}
+
+#return {
+  grid-area: rDate;
+}
+
+.entry {
+  width: 25%;
+  height: auto;
+  background: rgba(59, 74, 107, 0.8901960784);
+  display: block;
+}
+
+.title {
+  text-align: center;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  margin: 0 auto;
+  padding-bottom: 2px;
+}
+
+#geoEntry {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 90%;
+  background: #a78f31;
+  color: #200340;
+  letter-spacing: 1.5px;
+  margin: 0 auto;
+  border-radius: 15%;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 2px 0px 5px #444;
+}
+
+#coordinates,
+#location,
+#country,
+#length,
+#daysToTrip,
+#description,
+#temp,
+#photoURL,
+#pix,
+#pixDefault {
+  display: grid;
+  font-size: 16px;
+  text-align: center;
+  color: #080807;
+  margin-top: 5px;
+}
+
+#daysToTrip {
+  margin-top: 5px;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  height: 1.5em;
+  font-size: 1em;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: rgba(59, 74, 107, 0.5607843137);
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  letter-spacing: 1.5px;
+}
+
+input {
+  display: flex;
+  height: 100%;
+  width: 99%;
+  background: #5c8ffc;
+  color: white;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  box-shadow: 2px 4px 5px #444;
+}
+
+input:hover {
+  background: rgba(92, 143, 252, 0.7176470588);
+}
+
+button {
+  display: block;
+  width: 30%;
+  height: 90%;
+  background: #23bce6;
+  color: #f0d43a;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  letter-spacing: 1.5px;
+  margin: 0 auto;
+  border: 2px solid #143a45;
+  box-shadow: 2px 4px 5px #444;
+}
+
+button:hover {
+  background: rgba(35, 188, 230, 0.5450980392);
+}
+
+h1 {
+  font-size: 36px;
+}
+
+figure {
+  display: flex;
+  padding-top: 10px;
+  font-size: 12px;
+  justify-content: end;
+}/*# sourceMappingURL=form.css.map */
