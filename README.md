@@ -16,9 +16,19 @@ To use this project on your own machine, either clone the repo through github or
 For this project, dependencies are a big concern for local functionality on your machine. All required dependencies and their compatible versions can be found in the 'package.json' file. Be sure that you have Node version 14 installed on your machine, as older versions of node are not compatible with this project's dependencies. Once you have node v.14 installed, follow these steps to install dependencies:
 
 1. Open a terminal and cd into your project folder
-2. Enter the following command to install compatible versions of the packages: 
-```
-npm i --legacy-peer-deps
+2. ## Requirements
+
+- Node.js version 20 or later
+- Other dependencies...
+
+## Installation
+
+1. Ensure you have Node.js version 20 installed.
+2. Install project dependencies:
+
+   ```bash
+   npm install
+
 ```
 3. Go to the Geonames link above and create an account so you can get your API KEY. Your Geonames API Key will be the username that you used to create the account.
 4. Create a .env file in your root directory. Store your API KEY in .env as follows: 
@@ -63,5 +73,4 @@ Testing Suites have been introduced to ensure proper operation of necessary func
 npm run test
 ``` 
 
-## Considerations
-Pixabay has a vast catalog of images from a wide array of locations around the world. However, some locations are not as commonly known, and therefore may not have pictures available for them. If your location does not have an image available for it, you will see the default image of a notepad and sunglasses instead.
+
