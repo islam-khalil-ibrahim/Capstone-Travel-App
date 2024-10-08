@@ -11,3 +11,4 @@ describe("Testing that input field is not Null", () => {
            // Define the expected output, if any, in the form of variables/array
            expect(checkForCity).toBeDefined();
 })});
+
