@@ -1,7 +1,6 @@
 // Function that handles form submission
 // handleSubmit: event -> void
-// Reference: 
-// My NLP Project: https://github.com/conjohnson712/Evaluate-Article-with-NLP
+
 function handleSubmit(event) {
     event.preventDefault();
 
@@ -39,7 +38,6 @@ function handleSubmit(event) {
 
 // Event Listener to start handleSubmit on Click
 // If statement added to pass Jest
-// Reference: https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null
 let submit = document.getElementById("submit");
 if(submit){
     submit.addEventListener("click", handleSubmit);
@@ -55,7 +53,6 @@ const calcTripLength = () => {
     console.log(`Today is ${today}`)
     
     // Create date variables to track trip length
-    // Reference: https://www.geeksforgeeks.org/how-to-calculate-the-number-of-days-between-two-dates-in-javascript/
     let start = new Date(document.getElementById("start").value);
     let end = new Date(document.getElementById("end").value);
     console.log(`Start: ${start} End: ${end}`);
@@ -68,7 +65,6 @@ const calcTripLength = () => {
     let timeToTrip = (start.getTime() - today.getTime());
     let daysToTrip = Math.ceil(timeToTrip / msToDays);
 
-    // Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil
     let tripLength = Math.ceil(tripTimeMs / msToDays);
 
     if (tripLength >= 0 && tripLength <= 14 && daysToTrip >= 0) {
@@ -81,7 +77,6 @@ const calcTripLength = () => {
 // updateUI: async --> void
 // Function to update UI with NLP results
 // Reference: 
-// My NLP Project: https://github.com/conjohnson712/Evaluate-Article-with-NLP
 const updateUI = async () => {
     const request = await fetch("http://localhost:8714/apiChain");
     try {
