@@ -64,7 +64,6 @@ app.get("/apiChain", (req, res)=>{
 
 // Geonames Post Route
 // References:
-// My NLP Project: https://github.com/conjohnson712/Evaluate-Article-with-NLP
 // API parameters determined from example API call: http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=demo
 console.log(":: Starting Geo POST Route ::")
 
@@ -106,7 +105,6 @@ app.post("/apiChain", async function (req, res){
 
     // WeatherBit Post Route
     // References:
-    // My NLP Project: https://github.com/conjohnson712/Evaluate-Article-with-NLP
     // API parameters determined from example API call: https://www.weatherbit.io/api/weather-current
     const fullweatherURL = `${weatherURL}lat=${geonamesData.lat}&lon=${geonamesData.lng}&key=${weatherAPIKey}`;
     console.log(fullweatherURL);
