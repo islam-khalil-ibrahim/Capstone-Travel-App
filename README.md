@@ -10,16 +10,6 @@ The combination of these three APIs, which work in tandem, provide the user with
 
 The starter code for this project was a combination of 'Project 3: Weather Journal App' and 'Project 4: Evaluate A News Article With NLP', both of which can be found within my Github repo. Starter codes and instructions for both of these projects was provided by Udacity.com. 
 
-## Instructions
-To use this project on your own machine, either clone the repo through github or download the ZIP file through the green 'Code' button.
-
-For this project, dependencies are a big concern for local functionality on your machine. All required dependencies and their compatible versions can be found in the 'package.json' file. Be sure that you have Node version 14 installed on your machine, as older versions of node are not compatible with this project's dependencies. Once you have node v.14 installed, follow these steps to install dependencies:
-
-1. Open a terminal and cd into your project folder
-2. ## Requirements
-
-- Node.js version 20 or later
-- Other dependencies...
 
 ## Installation
 
